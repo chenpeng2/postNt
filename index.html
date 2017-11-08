@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <link rel="shortcut icon" href="/favicon.ico">
+   <link rel="stylesheet" href="./assets/css/icomoon.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>我的积分等级</title>
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7c360a339bd4cb31da93ce131b3c5cc6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="mainContainer">
+    <div class="containers containersIndex">
+      <div class="topper" style={{backgroundColor:this.props.color}}>
+                <div class="flo_left"><a id="goBack" href="javascript:;" style={{color:"rgba(0,0,0,0.65)"}}><i class="icon-back"></i></a></div>
+                <div class="flo_left flo_left2"><a href="/" style={{color:"rgba(0,0,0,0.65)"}}><i class="icon-pullout"></i></a></div>
+                <div class="text">我的积分等级</div>
+      </div>
+      <div class="grade">
+  					<div class="avator"><img src="./assets/images/filterBg.png"/></div>
+  					<p class="first">当前等级：<span>Lv.7</span></p>
+  					<p class="last">当前经验值100，距离Lv8升级需180经验值</p>
+  					<div class="gradeBg">
+  						<div class="text">
+  							<span class="dyna" style={{left:0.6+'rem',zIndex:'999'}}>3</span>
+  							<span class="zero">0</span>
+  							<span class="five">5</span>
+  							<span class="ten">10</span>
+  							<span class="four_ei">48</span>
+  						</div>
+  						<img src="./assets/images/gradeBg.png"/>
+  						<p>等级数据每天早上6点更新</p>
+  					</div>
+  					<div style={{borderBottom:'8px solid rgb(239,239,244)'}}></div>
+  			</div>
+        <div class="point_point">
+  						<h2>当前积分 : <span>100分</span></h2>
+  						<div class="three_ty clearfix">
+  							<div>
+    								<img src="./assets/images/point_detail.png"/>
+    								<p>积分明细</p>
+  							</div>
+  							<div>
+    								<img src="./assets/images/point_record.png"/>
+    								<p>兑换记录</p>
+  							</div>
+  							<div>
+    								<img src="./assets/images/get_point.png"/>
+    								<p>赚积分</p>
+  							</div>
+  						</div>
+  					   <div class="ant-carousel">
+  					     <div class="slick-slide">
+  					       <div><img src="./assets/images/advertisement.png"/></div>
+  					     </div>
+  					   </div>
+  				</div>
+  				<div class="point_detail">
+  					<ul>
+  								<li  class='detail0'>
+  									<div class="title" onclick="toggleDetail(0)">
+  										<div class="float_left">1、积分有什么用？</div>
+  										<div class="float_right"><i class="icon-unfold"></i></div>
+  									</div>
+  									<div class="text textHide">
+  									四轴飞行器主要由以下几个重要部件组成：电源系统、姿态感知系统、电机驱动系统、运动控制系统等，如果你想自己着手使用STM32做一个四轴，那么你有很多例子可以参考。目前基于STM32的四轴挺多的，而且大多是资料开源的。
+  	想做一个低成本的小四轴的话，可以考虑使用空心杯电机、姿态感知使用MPU6050、MPU9250等常见的六轴或者九轴传感器，如果想实现定高功能，那就加上气压计即可。控制系统可以使用STM32F051、STM32F103、STM32F405、STM32F411常见的控制器
+  								</div>
+  								</li>
+                  <li  class='detail1'>
+  									<div class="title" onclick="toggleDetail(1)">
+  										<div class="float_left">2、如何获得积分？</div>
+  										<div class="float_right"><i class="icon-unfold"></i></div>
+  									</div>
+  									<div class="text textHide">
+  									四轴飞行器主要由以下几个重要部件组成：电源系统、姿态感知系统、电机驱动系统、运动控制系统等，如果你想自己着手使用STM32做一个四轴，那么你有很多例子可以参考。目前基于STM32的四轴挺多的，而且大多是资料开源的。
+  	想做一个低成本的小四轴的话，可以考虑使用空心杯电机、姿态感知使用MPU6050、MPU9250等常见的六轴或者九轴传感器，如果想实现定高功能，那就加上气压计即可。控制系统可以使用STM32F051、STM32F103、STM32F405、STM32F411常见的控制器
+  								</div>
+  								</li>
+  					</ul>
+  				</div>
+    </div>
+  </div>
+  <script src="./assets/js/jquery-1.11.3.min.js"></script>
+  <!-- <script src="/src/bundle.js"></script> -->
+  <script src="./assets/js/rem.js"></script>
+  <script type="text/javascript">
+  function toggleDetail(index){
+    console.log(index)
+    console.log($('.detail'+index).find('.text').hasClass('textHide'))
+    if($('.detail'+index).find('.text').hasClass('textHide')){
+      $('.detail'+index).find('.text').removeClass('textHide');
+      $('.detail'+index).find('.text').show()
+    }else{
+      $('.detail'+index).find('.text').addClass('textHide');
+      $('.detail'+index).find('.text').hide()
+    }
+}
+  </script>
+</body>
+<html>
